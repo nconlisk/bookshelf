@@ -20,7 +20,7 @@ body{
 
 }
 
-.button-container, .info-container{
+.button-container, .info-container, .progress-container {
   display: flex;
   align-items: center;
 }
@@ -255,4 +255,147 @@ input {
   
 }
 
+
+
   
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+  body {
+    justify-content: flex-start; /* Adjust the content alignment */
+  }
+
+  .app {
+    width: 100%; /* Make the app container full width */
+    margin: 10px; /* Add some spacing */
+  }
+
+   /* List Header */
+
+  .list-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(0,0,0, 0.05) 1px solid;
+
+  }
+
+  /* List Item */
+
+  .list-item{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0, 0.08) 0 0 0 1px;
+    justify-content: space-between;
+    
+  }
+
+  .outer-bar {
+    width: 25vw;
+    height: 14px;
+    background-color: rgb(240, 128, 128); 
+    border-radius: 7px;
+    overflow: hidden;  
+  }
+  
+  .inner-bar {
+    height: 14px;
+  
+  }
+
+  .book-cover-art{
+    width: 25vw;
+  
+  }
+  
+  .book-cover-img {
+    width: 15vw;
+    height: auto;
+    
+  }
+  
+  .book-title {
+    font-size: 15px;
+    
+  }
+
+}
+
+/* Media query for phone screens */
+@media (max-width: 480px) {
+  body {
+    justify-content: flex-start; /* Adjust the content alignment */
+  }
+
+  .app {
+    width: 90%; /* Make the app container full width */
+    margin: 10px; /* Add some spacing */
+  }
+
+
+ 
+
+   /* List Header */
+
+  .list-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(0,0,0, 0.05) 1px solid;
+
+  }
+
+  .list-header h1 {
+    font-size: 5vw;
+  }
+
+  /* List Item */
+
+  .list-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0, 0.08) 0 0 0 1px;
+    justify-content: space-between;
+    
+  }
+
+  .outer-bar {
+    width: 100%;
+    height: 14px;
+    margin: 10px;
+    background-color: rgb(240, 128, 128); 
+    border-radius: 7px;
+    overflow: hidden;  
+  }
+  
+  .inner-bar {
+    height: 14px;
+  
+  }
+
+  .book-cover-art{
+    width: 100%;
+  
+  }
+  
+  .book-cover-img {
+    width: 38vw;
+    height: auto;
+    
+  }
+  
+  .book-title {
+    font-size: 15px;
+    
+  }
+
+  .button-container button {
+    margin: 0 0px 10px 10px;
+     
+  }
+
+}
